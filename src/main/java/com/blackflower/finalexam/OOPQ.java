@@ -62,7 +62,9 @@ class Sales{
 
 class DiscountedSales extends Sales{
     // 2.a
+    // Sales class must be impoerted to Customers -> import SalesPackage.Sales 
     public String reason; 
+    // protected String reason => If Customer class is extends with Sales this can be use
     
     int getSpecialDiscount(){
         return 0; // Returns smth but we dont care
